@@ -1,0 +1,133 @@
+graphical.target
+● ├─accounts-daemon.service   ####    Description=Accounts Service
+● ├─gdm.service   ####    Description=GNOME Display Manager
+● ├─initial-setup-reconfiguration.service   ####    Description=Initial Setup reconfiguration mode trigger service
+● ├─rtkit-daemon.service   ####    Description=RealtimeKit Scheduling Policy Service
+● ├─systemd-readahead-collect.service   ####    Description=Collect Read-Ahead Data
+● ├─systemd-readahead-replay.service   ####    Description=Replay Read-Ahead Data
+● ├─systemd-update-utmp-runlevel.service   ####    Description=Update UTMP about System Runlevel Changes
+● ├─udisks2.service   ####    Description=Disk Manager
+● └─multi-user.target
+●   ├─abrt-ccpp.service   ####    Description=Install ABRT coredump hook
+●   ├─abrt-oops.service   ####    Description=ABRT kernel log watcher
+●   ├─abrt-vmcore.service   ####    Description=Harvest vmcores for ABRT
+●   ├─abrt-xorg.service   ####    Description=ABRT Xorg log watcher
+●   ├─abrtd.service   ####    Description=ABRT Automated Bug Reporting Tool
+●   ├─atd.service   ####    Description=Job spooling tools
+●   ├─auditd.service   ####    Description=Security Auditing Service
+●   ├─avahi-daemon.service   ####    Description=Avahi mDNS/DNS-SD Stack
+●   ├─chronyd.service   ####    Description=NTP client/server
+●   ├─crond.service   ####    Description=Command Scheduler
+●   ├─cups.path   ####    Description=CUPS Printer Service Spool
+●   ├─cups.service   ####    Description=CUPS Printing Service
+●   ├─dbus.service   ####    Description=D-Bus System Message Bus
+●   ├─firewalld.service   ####    Description=firewalld - dynamic firewall daemon
+●   ├─initial-setup-reconfiguration.service   ####    Description=Initial Setup reconfiguration mode trigger service
+●   ├─irqbalance.service   ####    Description=irqbalance daemon
+●   ├─kdump.service   ####    Description=Crash recovery kernel arming
+●   ├─ksm.service   ####    Description=Kernel Samepage Merging
+●   ├─ksmtuned.service   ####    Description=Kernel Samepage Merging (KSM) Tuning Daemon
+●   ├─libstoragemgmt.service   ####    Description=libstoragemgmt plug-in server daemon
+●   ├─libvirtd.service   ####    Description=Virtualization daemon
+●   ├─mdmonitor.service   ####    Description=Software RAID monitoring and management
+●   ├─ModemManager.service   ####    Description=Modem Manager
+●   ├─mysqld.service   ####    Description=MySQL Server
+●   ├─NetworkManager.service   ####    Description=Network Manager
+●   ├─plymouth-quit-wait.service   ####    Description=Wait for Plymouth Boot Screen to Quit
+●   ├─plymouth-quit.service   ####    Description=Terminate Plymouth Boot Screen
+●   ├─postfix.service   ####    Description=Postfix Mail Transport Agent
+●   ├─rhel-configure.service   ####    Description=Reconfigure the system on administrator request
+●   ├─rngd.service   ####    Description=Hardware RNG Entropy Gatherer Daemon
+●   ├─rpcbind.service   ####    Description=RPC bind service
+●   ├─rsyslog.service   ####    Description=System Logging Service
+●   ├─smartd.service   ####    Description=Self Monitoring and Reporting Technology (SMART) Daemon
+●   ├─sshd.service   ####    Description=OpenSSH server daemon
+●   ├─sysstat.service   ####    Description=Resets System Activity Logs
+●   ├─systemd-ask-password-wall.path   ####    Description=Forward Password Requests to Wall Directory Watch
+●   ├─systemd-logind.service   ####    Description=Login Service
+●   ├─systemd-update-utmp-runlevel.service   ####    Description=Update UTMP about System Runlevel Changes
+●   ├─systemd-user-sessions.service   ####    Description=Permit User Sessions
+●   ├─tuned.service   ####    Description=Dynamic System Tuning Daemon
+●   ├─vdo.service   ####    Description=VDO volume services
+●   ├─vmtoolsd.service   ####    Description=Service for virtual machines hosted on VMware
+●   ├─vsftpd.service   ####    Description=Vsftpd ftp daemon
+●   ├─basic.target
+●   │ ├─microcode.service   ####    Description=Load CPU microcode update
+●   │ ├─rhel-dmesg.service   ####    Description=Dump dmesg to /var/log/dmesg
+●   │ ├─selinux-policy-migrate-local-changes@targeted.service
+●   │ ├─paths.target
+●   │ ├─slices.target
+●   │ │ ├─-.slice   ####    Description=Root Slice
+●   │ │ └─system.slice   ####    Description=System Slice
+●   │ ├─sockets.target
+●   │ │ ├─avahi-daemon.socket   ####    Description=Avahi mDNS/DNS-SD Stack Activation Socket
+●   │ │ ├─cups.socket   ####    Description=CUPS Printing Service Sockets
+●   │ │ ├─dbus.socket   ####    Description=D-Bus System Message Bus Socket
+●   │ │ ├─dm-event.socket   ####    Description=Device-mapper event daemon FIFOs
+●   │ │ ├─iscsid.socket   ####    Description=Open-iSCSI iscsid Socket
+●   │ │ ├─iscsiuio.socket   ####    Description=Open-iSCSI iscsiuio Socket
+●   │ │ ├─rpcbind.socket   ####    Description=RPCbind Server Activation Socket
+●   │ │ ├─spice-vdagentd.socket   ####    Description=Activation socket for spice guest agent daemon
+●   │ │ ├─systemd-initctl.socket   ####    Description=/dev/initctl Compatibility Named Pipe
+●   │ │ ├─systemd-journald.socket   ####    Description=Journal Socket
+●   │ │ ├─systemd-shutdownd.socket   ####    Description=Delayed Shutdown Socket
+●   │ │ ├─systemd-udevd-control.socket   ####    Description=udev Control Socket
+●   │ │ ├─systemd-udevd-kernel.socket   ####    Description=udev Kernel Socket
+●   │ │ ├─virtlockd.socket   ####    Description=Virtual machine lock manager socket
+●   │ │ └─virtlogd.socket   ####    Description=Virtual machine log manager socket
+●   │ ├─sysinit.target
+●   │ │ ├─dev-hugepages.mount   ####    Description=Huge Pages File System
+●   │ │ ├─dev-mqueue.mount   ####    Description=POSIX Message Queue File System
+●   │ │ ├─dmraid-activation.service   ####    Description=Activation of DM RAID sets
+●   │ │ ├─iscsi.service   ####    Description=Login and scanning of iSCSI devices
+●   │ │ ├─kmod-static-nodes.service   ####    Description=Create list of required static device nodes for the current kernel
+●   │ │ ├─lvm2-lvmetad.socket   ####    Description=LVM2 metadata daemon socket
+●   │ │ ├─lvm2-lvmpolld.socket   ####    Description=LVM2 poll daemon socket
+●   │ │ ├─lvm2-monitor.service   ####    Description=Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling
+●   │ │ ├─multipathd.service   ####    Description=Device-Mapper Multipath Device Controller
+●   │ │ ├─plymouth-read-write.service   ####    Description=Tell Plymouth To Write Out Runtime Data
+●   │ │ ├─plymouth-start.service   ####    Description=Show Plymouth Boot Screen
+●   │ │ ├─proc-sys-fs-binfmt_misc.automount   ####    Description=Arbitrary Executable File Formats File System Automount Point
+●   │ │ ├─rhel-autorelabel.service   ####    Description=Relabel all filesystems, if necessary
+●   │ │ ├─rhel-domainname.service   ####    Description=Read and set NIS domainname from /etc/sysconfig/network
+●   │ │ ├─rhel-import-state.service   ####    Description=Import network configuration from initramfs
+●   │ │ ├─rhel-loadmodules.service   ####    Description=Load legacy module configuration
+●   │ │ ├─sys-fs-fuse-connections.mount   ####    Description=FUSE Control File System
+●   │ │ ├─sys-kernel-config.mount   ####    Description=Configuration File System
+●   │ │ ├─sys-kernel-debug.mount   ####    Description=Debug File System
+●   │ │ ├─systemd-ask-password-console.path   ####    Description=Dispatch Password Requests to Console Directory Watch
+●   │ │ ├─systemd-binfmt.service   ####    Description=Set Up Additional Binary Formats
+●   │ │ ├─systemd-firstboot.service   ####    Description=First Boot Wizard
+●   │ │ ├─systemd-hwdb-update.service   ####    Description=Rebuild Hardware Database
+●   │ │ ├─systemd-journal-catalog-update.service   ####    Description=Rebuild Journal Catalog
+●   │ │ ├─systemd-journal-flush.service   ####    Description=Flush Journal to Persistent Storage
+●   │ │ ├─systemd-journald.service   ####    Description=Journal Service
+●   │ │ ├─systemd-machine-id-commit.service   ####    Description=Commit a transient machine-id on disk
+●   │ │ ├─systemd-modules-load.service   ####    Description=Load Kernel Modules
+●   │ │ ├─systemd-random-seed.service   ####    Description=Load/Save Random Seed
+●   │ │ ├─systemd-sysctl.service   ####    Description=Apply Kernel Variables
+●   │ │ ├─systemd-tmpfiles-setup-dev.service   ####    Description=Create Static Device Nodes in /dev
+●   │ │ ├─systemd-tmpfiles-setup.service   ####    Description=Create Volatile Files and Directories
+●   │ │ ├─systemd-udev-trigger.service   ####    Description=udev Coldplug all Devices
+●   │ │ ├─systemd-udevd.service   ####    Description=udev Kernel Device Manager
+●   │ │ ├─systemd-update-done.service   ####    Description=Update is Completed
+●   │ │ ├─systemd-update-utmp.service   ####    Description=Update UTMP about System Boot/Shutdown
+●   │ │ ├─systemd-vconsole-setup.service   ####    Description=Setup Virtual Console
+●   │ │ ├─cryptsetup.target
+●   │ │ ├─local-fs.target
+●   │ │ │ ├─rhel-readonly.service   ####    Description=Configure read-only root support
+●   │ │ │ └─systemd-remount-fs.service   ####    Description=Remount Root and Kernel File Systems
+●   │ │ └─swap.target
+●   │ └─timers.target
+●   │   ├─systemd-tmpfiles-clean.timer   ####    Description=Daily Cleanup of Temporary Directories
+●   │   └─unbound-anchor.timer   ####    Description=daily update of the root trust anchor for DNSSEC
+●   ├─getty.target
+●   ├─nfs-client.target
+●   │ ├─auth-rpcgss-module.service   ####    Description=Kernel Module supporting RPCSEC_GSS
+●   │ ├─rpc-statd-notify.service   ####    Description=Notify NFS peers of a restart
+●   │ └─remote-fs-pre.target
+●   └─remote-fs.target
+●     └─nfs-client.target
+●       ├─auth-rpcgss-module.service   ####    Description=Kernel Module supporting RPCSEC_GSS
+●       ├─rpc-statd-notify.service   ####    Description=Notify NFS peers of a restart
+●       └─remote-fs-pre.target
